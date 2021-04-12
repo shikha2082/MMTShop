@@ -1,0 +1,23 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>SKU</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of ProductList">
+            <td>{{dataItem.ProductName}}</td>
+            <td>{{dataItem.Sku}}</td>
+            <td>{{dataItem.Deascription}}</td>
+            <td>{{dataItem.Price}}</td>
+            <td>
+                <button type="button" class="btn btn-light mr-1">Edit</button>
+                <button type="button" class="btn btn-light mr-1">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
